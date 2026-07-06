@@ -22,6 +22,22 @@ const steps = [
   'Combine o atendimento e resolva em minutos',
 ]
 
+const diaristaBenefits = [
+  'desejam encontrar novos clientes',
+  'querem divulgar seus serviços',
+  'buscam mais oportunidades de trabalho',
+  'procuram uma plataforma simples de usar',
+]
+
+const differentiators = [
+  'Plataforma moderna',
+  'Experiência intuitiva',
+  'Interface simples e elegante',
+  'Facilidade para conectar clientes e diaristas',
+  'Processo rápido',
+  'Pensado para o dia a dia real das pessoas',
+]
+
 function App() {
   return (
     <main className="page-shell">
@@ -105,10 +121,58 @@ function App() {
         </article>
       </section>
 
+      <section className="dual-section">
+        <article className="content-card content-card--bright">
+          <p className="eyebrow">Para diaristas</p>
+          <h2>Uma plataforma para quem quer mais visibilidade e trabalho.</h2>
+          <p className="section-text">
+            O Limpay também ajuda diaristas que querem se conectar com novos
+            clientes, divulgar seus serviços e ter uma experiência simples para o
+            dia a dia.
+          </p>
+
+          <ul className="bullet-list">
+            {diaristaBenefits.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="content-card content-card--dark">
+          <p className="eyebrow">Diferenciais do Limpay</p>
+          <h2>Um fluxo moderno, direto e pensado para conectar pessoas.</h2>
+          <ul className="chip-list">
+            {differentiators.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </article>
+      </section>
+
+      <section className="story-section">
+        <div className="story-heading">
+          <p className="eyebrow">Por que usar o Limpay?</p>
+          <h2>O Limpay nasceu para facilitar a conexão entre clientes e diaristas.</h2>
+        </div>
+
+        <div className="story-copy">
+          <p>
+            Muitas vezes, encontrar profissionais disponíveis ou divulgar serviços
+            pode ser um processo desorganizado e complicado. O Limpay simplifica
+            essa conexão, oferecendo uma experiência mais prática, moderna e
+            acessível.
+          </p>
+          <p>
+            A plataforma foi desenvolvida para aproximar pessoas de forma simples e
+            intuitiva.
+          </p>
+        </div>
+      </section>
+
       <section className="workflow-section" id="como-funciona">
         <div>
           <p className="eyebrow">Como funciona</p>
-          <h2>Uma landpage simples, focada em conversão e clareza.</h2>
+          <h2>Como o aplicativo organiza a jornada de clientes e diaristas.</h2>
         </div>
 
         <ol className="workflow-list">
@@ -120,6 +184,48 @@ function App() {
           ))}
         </ol>
       </section>
+
+      <section className="final-cta">
+        <div>
+          <p className="eyebrow">Chamada final</p>
+          <h2>Simplifique a conexão entre clientes e diaristas</h2>
+          <p>
+            Baixe o aplicativo e descubra uma maneira moderna de conectar pessoas e
+            oportunidades.
+          </p>
+        </div>
+
+        <a className="primary-action primary-action--dark" href="#">
+          Baixar aplicativo
+        </a>
+      </section>
+
+      <section className="faq-section">
+        <div className="section-heading">
+          <p className="eyebrow">Perguntas Frequentes</p>
+          <h2>Sessão vazia por enquanto.</h2>
+        </div>
+
+        <div className="faq-empty" aria-hidden="true">
+          Em breve
+        </div>
+      </section>
+
+      <footer className="site-footer">
+        <div>
+          <p className="footer-brand">Limpay</p>
+          <span>Conectando clientes e diaristas com simplicidade.</span>
+        </div>
+
+        <nav aria-label="Rodapé">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Redes sociais</a>
+          <a href="#">Contato</a>
+        </nav>
+
+        <p className="footer-copy">Todos os direitos reservados.</p>
+      </footer>
     </main>
   )
 }

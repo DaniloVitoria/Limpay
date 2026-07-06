@@ -370,6 +370,200 @@ h1 {
   line-height: 1.5;
 }
 
+.dual-section,
+.story-section,
+.final-cta,
+.faq-section {
+  margin-top: 26px;
+}
+
+.dual-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.content-card,
+.story-section,
+.final-cta,
+.faq-section {
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 22px 50px rgba(2, 13, 39, 0.16);
+}
+
+.content-card {
+  padding: 28px;
+}
+
+.content-card--bright {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.content-card--dark {
+  background: rgba(6, 22, 65, 0.38);
+}
+
+.content-card h2,
+.story-section h2,
+.section-heading h2,
+.final-cta h2,
+.faq-section h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.7rem);
+  line-height: 1.05;
+  max-width: 14ch;
+}
+
+.section-text {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+}
+
+.bullet-list,
+.chip-list {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bullet-list {
+  display: grid;
+  gap: 10px;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 28px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.45;
+}
+
+.bullet-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #fff0a5, #ffc61d);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.08);
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip-list li {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.story-section {
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.11);
+  text-align: center;
+}
+
+.story-heading,
+.story-copy {
+  max-width: 760px;
+}
+
+.story-heading {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.story-copy {
+  display: grid;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.68;
+  font-size: 1.02rem;
+}
+
+.final-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(6, 22, 65, 0.46));
+}
+
+.final-cta p {
+  margin-top: 12px;
+  max-width: 42ch;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.6;
+}
+
+.primary-action--dark {
+  background: linear-gradient(180deg, #fff7c8 0%, #ffd34f 100%);
+}
+
+.faq-section {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.faq-empty {
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  margin-top: 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.66);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px 24px;
+  align-items: center;
+  margin: 28px 0 0;
+  padding: 24px 8px 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  justify-content: center;
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  color: rgba(255, 255, 255, 0.68);
+}
+
 @media (max-width: 1100px) {
   .page-shell {
     padding: 18px;
@@ -393,7 +587,15 @@ h1 {
   }
 
   .feature-grid,
-  .info-strip {
+  .info-strip,
+  .dual-section,
+  .screen-grid,
+  .final-cta,
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .story-section {
     grid-template-columns: 1fr;
   }
 
@@ -410,6 +612,10 @@ h1 {
   .floating-card--bottom {
     right: 0;
     bottom: 18px;
+  }
+
+  .site-footer {
+    justify-items: start;
   }
 }
 
@@ -446,14 +652,32 @@ h1 {
 
   .info-strip,
   .workflow-section,
+  .content-card,
+  .story-section,
+  .app-showcase,
+  .final-cta,
+  .faq-section,
   .feature-card,
   .floating-card {
     border-radius: 22px;
+  }
+
+  .content-card,
+  .story-section,
+  .workflow-section,
+  .final-cta,
+  .faq-section,
+  .app-showcase {
+    padding: 20px;
   }
 
   .floating-card {
     min-width: 0;
     max-width: 190px;
     padding: 12px 14px;
+  }
+
+  .screen-card__mockup {
+    min-height: 220px;
   }
 }
