@@ -1,0 +1,63 @@
+:root {
+  --text: #eaf0ff;
+  --text-h: #ffffff;
+  --bg: #071d55;
+  --border: rgba(255, 255, 255, 0.14);
+  --code-bg: rgba(255, 255, 255, 0.1);
+  --accent: #ffc81f;
+  --accent-bg: rgba(255, 200, 31, 0.16);
+  --accent-border: rgba(255, 200, 31, 0.5);
+  --social-bg: rgba(255, 255, 255, 0.08);
+  --shadow:
+    rgba(0, 0, 0, 0.22) 0 18px 36px -18px, rgba(0, 0, 0, 0.16) 0 8px 16px -14px;
+
+  --sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --heading: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  color: #05206d;
+  background: rgba(255, 227, 96, 0.9);
+}
