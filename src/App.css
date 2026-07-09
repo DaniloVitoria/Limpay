@@ -596,12 +596,20 @@ h1 {
 
 .content-card h2,
 .story-section h2,
-.section-heading h2,
 .final-cta h2,
 .faq-section h2 {
   font-size: clamp(1.8rem, 2.8vw, 2.7rem);
   line-height: 1.05;
   max-width: 14ch;
+}
+
+
+.section-heading h2{
+  width: 100%;
+  max-width: none;
+  text-align: left;
+  align-self: stretch;
+  justify-self: stretch;
 }
 
 .section-text {
@@ -1055,3 +1063,4 @@ final-cta > div {
 .final-cta p {
   max-width: none;
 }
+

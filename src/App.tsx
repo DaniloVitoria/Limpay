@@ -209,7 +209,7 @@ const faqSections = [
           'Não realize o pagamento. Considere a mensagem uma tentativa de golpe e informe imediatamente o suporte da Limpay.',
       },
     ],
-    note: 'SUPORTE: limpayconect.suporte@gmail.com',
+    
   },
 ]
 
@@ -456,8 +456,9 @@ function App() {
           <a href="#">Termos de Uso</a>
           <a href="#">Redes sociais</a>
           <a href="#">Contato</a>
+          
         </nav>
-
+        <span>SUPORTE: limpayconect.suporte@gmail.com</span>
         <p className="footer-copy">Todos os direitos reservados.</p>
       </footer>
     </main>
