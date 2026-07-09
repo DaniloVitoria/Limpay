@@ -464,7 +464,12 @@ h1 {
 }
 
 .workflow-section > div {
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.25rem;
+  width: 100%;
+  text-align: center;
 }
 
 .info-strip {
@@ -512,7 +517,8 @@ h1 {
 }
 
 .workflow-section h2 {
-  max-width: 12ch;
+  width: 100%;
+  max-width: none;
   font-size: clamp(1.9rem, 3vw, 3rem);
   line-height: 1.05;
 }
