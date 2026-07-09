@@ -105,6 +105,20 @@ function App() {
         <div className="hero-visual">
           <div className="visual-glow visual-glow--left" />
           <div className="visual-glow visual-glow--right" />
+          <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
+            <div className="qr-placeholder__frame" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+              <span />
+              <span className="qr-placeholder__center" />
+            </div>
+            <div className="qr-placeholder__copy">
+              <p className="qr-placeholder__eyebrow">QR code do app</p>
+              <strong>Espaço reservado</strong>
+              <span>O QR code será inserido aqui quando estiver pronto.</span>
+            </div>
+          </div>
           <img
             className="banner-image"
             src={bannerImage}
