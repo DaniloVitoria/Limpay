@@ -41,6 +41,24 @@ const differentiators = [
 function App() {
   return (
     <main className="page-shell">
+      <header className="top-header" aria-label="Instagram da Limpay">
+        <a
+          className="top-header__link"
+          href="https://www.instagram.com/limpayconect?igsh=MTkwemliZmlhMm9keg=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="top-header__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <rect x="4" y="4" width="16" height="16" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4.2" />
+              <circle cx="17.1" cy="6.9" r="1.1" />
+            </svg>
+          </span>
+          <span className="top-header__handle">@limpayconect</span>
+        </a>
+      </header>
+
       <section className="hero-section">
         <div className="hero-copy">
           <div className="brand-row">
