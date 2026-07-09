@@ -38,7 +38,19 @@ const differentiators = [
   'Pensado para o dia a dia real das pessoas',
 ]
 
-const faqSections = [
+type FaqItem = {
+  question: string
+  answer: string
+  bullets?: string[]
+}
+
+type FaqSection = {
+  title: string
+  items: FaqItem[]
+  note?: string
+}
+
+const faqSections: FaqSection[] = [
   {
     title: 'Para Clientes',
     items: [
@@ -209,6 +221,7 @@ const faqSections = [
           'Não realize o pagamento. Considere a mensagem uma tentativa de golpe e informe imediatamente o suporte da Limpay.',
       },
     ],
+    note: 'Suporte oficial: limpayconect.suporte@gmail.com',
     
   },
 ]
