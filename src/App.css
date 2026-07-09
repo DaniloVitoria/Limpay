@@ -927,3 +927,25 @@ h1 {
     min-height: 13.75rem;
   }
 }
+final-cta > div {
+  display: grid;
+  justify-items: stretch;
+  align-content: start;
+  gap: 0.25rem;
+  width: 100%;
+  text-align: center;
+
+}
+
+.final-cta > div h2 {
+  width: 100%;
+  max-width: none;
+}
+
+.final-cta > div > * {
+  width: 100%;
+}
+
+.final-cta p {
+  max-width: none;
+}
