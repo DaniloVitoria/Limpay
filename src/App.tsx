@@ -38,6 +38,181 @@ const differentiators = [
   'Pensado para o dia a dia real das pessoas',
 ]
 
+const faqSections = [
+  {
+    title: 'Para Clientes',
+    items: [
+      {
+        question: 'Como funciona a Limpay?',
+        answer:
+          'A Limpay conecta clientes a diaristas autônomas por meio da plataforma. A Limpay não presta serviços de limpeza diretamente, apenas intermedeia a contratação e o pagamento.',
+      },
+      {
+        question: 'Como faço para contratar uma diarista?',
+        answer:
+          'Basta escolher uma profissional disponível, selecionar a data e horário, realizar o pagamento pela plataforma e aguardar a confirmação.',
+      },
+      {
+        question: 'O pagamento é seguro?',
+        answer: 'Sim. Todos os pagamentos são processados pela plataforma utilizando o Mercado Pago.',
+      },
+      {
+        question: 'Posso pagar diretamente para a diarista?',
+        answer:
+          'Não. Todos os pagamentos devem ser realizados exclusivamente pela plataforma. Pagamentos por fora são proibidos e podem caracterizar tentativa de golpe.',
+      },
+      {
+        question: 'O que acontece se eu cancelar?',
+        answer: 'Antes do dia do serviço: reembolso de 100%. No mesmo dia do serviço: não há reembolso.',
+      },
+      {
+        question: 'E se a diarista cancelar?',
+        answer: 'Você recebe reembolso integral.',
+      },
+      {
+        question: 'E se a diarista não confirmar o serviço?',
+        answer:
+          'Caso ela não confirme em até 2 horas após o pagamento, o serviço é cancelado automaticamente e você recebe reembolso integral.',
+      },
+      {
+        question: 'Posso solicitar serviços extras durante a limpeza?',
+        answer: 'Somente mediante acordo direto entre você e a diarista.',
+      },
+      {
+        question: 'Quem fornece os materiais de limpeza?',
+        answer: 'Cliente e diarista devem combinar previamente quem fornecerá os materiais.',
+      },
+      {
+        question: 'O que faço se outra pessoa aparecer no lugar da diarista contratada?',
+        answer:
+          'Recuse o serviço e entre imediatamente em contato com o suporte da Limpay.',
+      },
+      {
+        question: 'Como confirmar que o serviço foi concluído?',
+        answer:
+          'Após a diarista informar a conclusão, você receberá uma notificação para confirmar ou relatar algum problema.',
+      },
+      {
+        question: 'O que acontece se eu não confirmar o serviço?',
+        answer: 'Após 48 horas sem manifestação, o serviço será considerado concluído automaticamente.',
+      },
+    ],
+  },
+  {
+    title: 'Para Diaristas',
+    items: [
+      {
+        question: 'Como faço meu cadastro?',
+        answer:
+          'É necessário informar seus dados, CPF, enviar uma selfie e uma foto de perfil para verificação.',
+      },
+      {
+        question: 'Quando minha conta será ativada?',
+        answer: 'Após a análise e aprovação da documentação pela equipe da Limpay.',
+      },
+      {
+        question: 'Posso recusar serviços?',
+        answer: 'Sim. Você decide quais serviços aceita.',
+      },
+      {
+        question: 'Posso definir meus próprios horários?',
+        answer: 'Sim. Você trabalha como profissional autônoma e define sua própria agenda.',
+      },
+      {
+        question: 'Existe vínculo empregatício com a Limpay?',
+        answer: 'Não. A Limpay não contrata diaristas e não existe vínculo empregatício.',
+      },
+      {
+        question: 'Quanto a Limpay cobra?',
+        answer: 'A plataforma retém uma taxa de 5% sobre o valor do serviço da diarista.',
+      },
+      {
+        question: 'Quando recebo meu pagamento?',
+        answer:
+          'Após a confirmação da conclusão do serviço pelo cliente ou automaticamente após 48 horas, seguindo os prazos do meio de pagamento escolhido.',
+      },
+      {
+        question: 'Posso enviar outra pessoa para realizar o serviço?',
+        answer: 'Não. O serviço deve ser realizado exclusivamente pela diarista contratada.',
+      },
+      {
+        question: 'O que acontece se eu recusar muitos serviços?',
+        answer:
+          'A recusa de três serviços consecutivos pode resultar em bloqueio temporário da conta por 30 dias.',
+      },
+      {
+        question: 'Posso trabalhar em outras plataformas?',
+        answer: 'Sim. Não há exclusividade.',
+      },
+    ],
+  },
+  {
+    title: 'Pagamentos',
+    items: [
+      {
+        question: 'Quais formas de pagamento são aceitas?',
+        answer: 'Pix e cartão de crédito.',
+      },
+      {
+        question: 'Como funciona o reembolso?',
+        answer:
+          'Os reembolsos seguem as regras de cancelamento da plataforma e podem depender dos prazos do Mercado Pago ou da operadora do cartão.',
+      },
+      {
+        question: 'A Limpay pode reter pagamentos?',
+        answer:
+          'Sim. Em casos de disputa, suspeita de fraude ou necessidade de verificação de segurança.',
+      },
+    ],
+  },
+  {
+    title: 'Conta e Segurança',
+    items: [
+      {
+        question: 'Posso excluir minha conta?',
+        answer:
+          'Sim. Você pode excluir sua conta a qualquer momento pelo aplicativo ou solicitar a exclusão por meio dos canais oficiais de atendimento. Em alguns casos, determinadas informações poderão ser mantidas pelo prazo exigido pela legislação aplicável.',
+      },
+      {
+        question: 'A Limpay protege meus dados?',
+        answer:
+          'Sim. A Limpay adota medidas técnicas e administrativas para proteger os dados pessoais dos usuários, em conformidade com a Lei Geral de Proteção de Dados (LGPD). As informações são utilizadas apenas para viabilizar o funcionamento da plataforma, o processamento de pagamentos, a verificação de identidade, a segurança e outras finalidades previstas na Política de Privacidade e nos Termos de Uso.',
+      },
+      {
+        question: 'Por que minha conta pode ser suspensa ou encerrada?',
+        answer:
+          'A Limpay poderá suspender ou encerrar contas que violem os Termos de Uso ou que representem risco à segurança, à integridade ou ao bom funcionamento da plataforma.',
+        bullets: [
+          'fornecimento de informações falsas ou inconsistentes',
+          'uso da plataforma em desacordo com os Termos de Uso',
+          'suspeita de fraude, abuso ou uso indevido da plataforma',
+          'condutas que comprometam a segurança ou a experiência de outros usuários',
+        ],
+      },
+      {
+        question: 'A Limpay vende meus dados?',
+        answer:
+          'Não. Os dados não são comercializados e só são compartilhados quando necessário para processamento de pagamentos ou por obrigação legal.',
+      },
+    ],
+  },
+  {
+    title: 'Suporte',
+    items: [
+      {
+        question: 'Como entro em contato com o suporte?',
+        answer: 'Pelos canais oficiais da Limpay.',
+      },
+      {
+        question: 'Recebi uma mensagem pedindo PIX fora da plataforma. O que fazer?',
+        answer:
+          'Não realize o pagamento. Considere a mensagem uma tentativa de golpe e informe imediatamente o suporte da Limpay.',
+      },
+    ],
+    note: 'SUPORTE: limpayconect.suporte@gmail.com',
+  },
+]
+
 function App() {
   return (
     <main className="page-shell">
@@ -235,11 +410,38 @@ function App() {
       <section className="faq-section">
         <div className="section-heading">
           <p className="eyebrow">Perguntas Frequentes</p>
-          <h2>Sessão vazia por enquanto.</h2>
+          <h2>Tudo o que clientes e diaristas precisam saber.</h2>
         </div>
 
-        <div className="faq-empty" aria-hidden="true">
-          Em breve
+        <div className="faq-grid">
+          {faqSections.map((section) => (
+            <article className="faq-card" key={section.title}>
+              <div className="faq-card__header">
+                <p className="faq-card__eyebrow">FAQ</p>
+                <h3>{section.title}</h3>
+              </div>
+
+              <div className="faq-card__items">
+                {section.items.map((item) => (
+                  <details className="faq-item" key={item.question}>
+                    <summary>{item.question}</summary>
+                    <div className="faq-item__body">
+                      <p>{item.answer}</p>
+                      {item.bullets ? (
+                        <ul>
+                          {item.bullets.map((bullet) => (
+                            <li key={bullet}>{bullet}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
+                  </details>
+                ))}
+              </div>
+
+              {section.note ? <p className="faq-card__note">{section.note}</p> : null}
+            </article>
+          ))}
         </div>
       </section>
 
