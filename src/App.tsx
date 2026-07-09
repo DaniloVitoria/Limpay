@@ -221,7 +221,7 @@ const faqSections: FaqSection[] = [
           'Não realize o pagamento. Considere a mensagem uma tentativa de golpe e informe imediatamente o suporte da Limpay.',
       },
     ],
-    note: 'Suporte oficial: limpayconect.suporte@gmail.com',
+    
     
   },
 ]
