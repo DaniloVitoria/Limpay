@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIMPAY - Termos de Uso, Condições de Intermediação e Política de Privacidade</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg-1: #042d8c;
+        --bg-2: #0a4ec7;
+        --bg-3: #133a88;
+        --accent: #f3b200;
+        --panel: rgba(255, 255, 255, 0.08);
+        --panel-border: rgba(255, 255, 255, 0.14);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.74);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(250, 190, 0, 0.22), transparent 24%),
+          radial-gradient(circle at 80% 18%, rgba(255, 255, 255, 0.12), transparent 18%),
+          linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 36%, var(--bg-3) 62%, var(--accent) 62%, var(--accent) 100%);
+        color: var(--text);
+      }
+
+      .page-shell {
+        position: relative;
+        min-height: 100vh;
+        padding: 1.25rem;
+      }
+
+      .page-shell::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(3, 15, 44, 0.2), rgba(3, 15, 44, 0.08));
+        pointer-events: none;
+      }
+
+      .page-shell > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+
+      .brand {
+        display: grid;
+        gap: 0.2rem;
+      }
+
+      .brand strong {
+        font-size: 1.05rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.2rem;
+        padding: 0.38rem 0.82rem;
+        border-radius: 999px;
+        text-decoration: none;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.09);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .document {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 1.25rem;
+        border-radius: 1.75rem;
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        box-shadow: 0 22px 50px rgba(2, 13, 39, 0.22);
+        backdrop-filter: blur(12px);
+      }
+
+      .document h1,
+      .document h2,
+      .document h3,
+      .document p {
+        margin: 0;
+      }
+
+      .document h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        line-height: 1.02;
+        text-align: center;
+      }
+
+      .document .subtitle {
+        margin-top: 0.75rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      .document .meta {
+        margin-top: 1rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.92rem;
+      }
+
+      .document pre {
+        margin: 1.4rem 0 0;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-family: inherit;
+        font-size: 0.96rem;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .footer-note {
+        margin-top: 1rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.84rem;
+      }
+
+      @media (max-width: 700px) {
+        .page-shell {
+          padding: 0.85rem;
+        }
+
+        .document {
+          padding: 1rem;
+          border-radius: 1.25rem;
+        }
+
+        .document pre {
+          font-size: 0.92rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="topbar">
+        <div class="brand">
+          <strong>LIMPAY</strong>
+          <span>Marketplace de Serviços de Limpeza</span>
+        </div>
+        <a class="back-link" href="/">Voltar ao site</a>
+      </div>
+
+      <article class="document">
+        <h1>TERMOS DE USO, CONDIÇÕES DE INTERMEDIAÇÃO E POLÍTICA DE PRIVACIDADE</h1>
+        <p class="subtitle">Versão 1.2 | Agosto de 2026</p>
+        <p class="meta">LIMPAY SOLUCOES DIGITAIS LTDA · CNPJ 66.937.666/0001-89</p>
+
+        <pre>IDENTIFICAÇÃO DA PLATAFORMA
+Estes Termos de Uso são disponibilizados por LIMPAY SOLUCOES DIGITAIS LTDA, inscrita no CNPJ sob o nº 66.937.666/0001-89, com sede em R DONA MARIA CESAR, n. 170 SALA 0203 CXPST 1592, RECIFE, cep 50.030-140, doravante denominada simplesmente “Limpay”.
+
+Canais oficiais de atendimento: limpayconect@gmail.com e limpayconect.suporte@gmail.com
+
+1. DEFINIÇÃO DA PLATAFORMA
+A Limpay é uma plataforma digital que atua na intermediação entre usuários contratantes e prestadores de serviços autônomos de limpeza, por meio de tecnologia própria.
+
+A Limpay não presta serviços de limpeza, não contrata prestadores, não interfere na execução dos serviços e não mantém qualquer vínculo empregatício, societário ou de subordinação com os usuários da plataforma.
+
+A plataforma também atua na facilitação do processamento de pagamentos entre as partes, sem, contudo, integrar a relação contratual estabelecida entre contratante e prestador.
+
+2. AUSÊNCIA DE VÍNCULO EMPREGATÍCIO
+Os prestadores cadastrados na plataforma atuam como profissionais autônomos e independentes, sendo integralmente responsáveis por suas atividades, incluindo:
+
+• Definir seus próprios horários de trabalho;
+• Aceitar ou recusar livremente as solicitações de serviço;
+• Utilizar seus próprios meios, ferramentas e métodos de execução;
+• Arcar com todos os tributos, encargos e obrigações legais decorrentes de sua atividade.
+
+A Limpay não exerce qualquer controle, direção ou subordinação sobre os prestadores, inexistindo, em nenhuma hipótese, vínculo empregatício, societário ou relação de trabalho entre a plataforma e os usuários, nos termos da legislação aplicável.
+
+3. FUNCIONAMENTO DA PLATAFORMA
+A Limpay atua exclusivamente como intermediadora tecnológica, disponibilizando um ambiente digital que permite:
+
+• O agendamento de serviços entre usuários;
+• A comunicação entre contratantes e prestadores;
+• A facilitação do processamento de pagamentos.
+
+A Limpay não participa da negociação direta entre as partes, nem da execução dos serviços, limitando-se à disponibilização da tecnologia que viabiliza a conexão entre os usuários.
+
+A plataforma não garante a disponibilidade contínua de seus serviços, podendo ocorrer interrupções, falhas técnicas ou indisponibilidades temporárias, sem que isso gere qualquer responsabilidade.
+
+4. CADASTRO E VERIFICAÇÃO
+Para utilizar a plataforma, o usuário deve realizar um cadastro completo e fornecer informações verdadeiras, atualizadas e precisas.
+
+4.1 A foto de perfil é obrigatória para todos os usuários, sejam contratantes ou prestadores. A foto deve ser real, atual e mostrar claramente o rosto do titular da conta. Fotos de terceiros, imagens falsas, logotipos ou ilustrações poderão ensejar a restrição de acesso, nos termos da Cláusula 15.
+
+4.2 Os prestadores devem fornecer CPF válido e selfie para verificação de identidade, que serão revisados manualmente pela equipe da Limpay antes da ativação da conta.
+
+4.3 A conta do prestador é criada com status “pendente de aprovação” e somente será ativada após revisão e aprovação pela Limpay.
+
+4.4 A Limpay se reserva o direito de recusar cadastros ou restringir o acesso de cadastros que apresentem informações falsas, incompletas ou suspeitas, nos termos da Cláusula 15.
+
+4.5 Um mesmo CPF somente pode ser utilizado para um cadastro de cada tipo (contratante ou prestador). Não é permitido ter dois cadastros do mesmo tipo com o mesmo CPF.
+
+5. PAGAMENTOS, TAXAS E REPASSES
+5.1 Intermediação financeira
+A Limpay realiza a intermediação financeira dos valores pagos pelos contratantes no momento do agendamento dos serviços, podendo reter taxa de serviço conforme condições estabelecidas neste contrato.
+
+5.2 Taxas da plataforma
+Sobre os valores transacionados, poderão ser aplicadas as seguintes taxas:
+
+a) Ao prestador de serviços: taxa de 5% (cinco por cento) sobre o valor do serviço;
+
+b) Ao contratante: taxa de 15% (quinze por cento) sobre o valor da contratação.
+
+5.3 Retenção e custódia dos valores
+Os valores pagos pelo contratante no momento do agendamento ficam depositados em conta de titularidade da Limpay, mantida junto à instituição financeira intermediadora (atualmente o Mercado Pago), onde permanecem custodiados até a execução do serviço e a respectiva confirmação, nos termos dos itens 5.4 e 5.5.
+
+Enquanto retido, o valor não pertence ao prestador nem lhe é disponibilizado, permanecendo vinculado à efetiva execução do serviço contratado, ressalvada a hipótese do item 6.2, em que o valor é destinado ao prestador em razão da reserva de agenda.
+
+Não havendo execução do serviço, o valor retido será destinado na forma da Cláusula 6 (Cancelamentos e Reembolsos), observados os prazos operacionais da instituição financeira e, no caso de pagamento com cartão, da respectiva bandeira e do emissor.
+
+5.4 Registro da conclusão do serviço
+Concluído o serviço, o prestador deverá registrar a conclusão na plataforma. O contratante será notificado no mesmo momento para confirmar a execução ou registrar contestação.
+
+5.5 Confirmação e prazo de repasse
+O repasse ao prestador observa a seguinte linha do tempo, contada a partir do registro de conclusão do serviço:
+
+Etapa 1 – Confirmação (24 horas): o contratante dispõe de 24 (vinte e quatro) horas, contadas da notificação, para confirmar a execução ou registrar contestação. Não havendo manifestação nesse prazo, o serviço será considerado automaticamente confirmado para todos os fins de direito, inclusive para liberação do pagamento ao prestador.
+
+Etapa 2 – Processamento (48 horas): confirmada a execução, de forma expressa ou automática, a Limpay autoriza a liberação e a instituição financeira processa o repasse ao prestador em até 48 (quarenta e oito) horas.
+
+Prazo total: até 72 (setenta e duas) horas contadas da conclusão do serviço.
+
+Nos pagamentos com cartão de crédito, o crédito efetivo observará adicionalmente a modalidade de recebimento escolhida pelo prestador junto à instituição financeira intermediadora, bem como os prazos e taxas por ela praticados.
+
+5.6 Contestação: hipóteses, prazo e efeitos
+5.6.1 O mecanismo de contestação da plataforma destina-se exclusivamente à verificação de fatos objetivos relativos à realização do serviço, quais sejam:
+
+a) o prestador não compareceu no local e no horário agendados;
+
+b) o serviço foi executado por pessoa diversa do prestador contratado, nos termos da Cláusula 9;
+
+c) o serviço não foi iniciado ou foi interrompido antes da conclusão, sem justificativa;
+
+d) houve cobrança de valores fora da plataforma, nos termos do item 5.7;
+
+e) houve indício de fraude.
+
+5.6.2 A Limpay não avalia, não arbitra e não garante a qualidade, o padrão ou o resultado do serviço, que são de responsabilidade exclusiva do prestador, conforme os itens 7.4 e 8.2. Havendo insatisfação com a qualidade do serviço efetivamente executado, o contratante poderá registrar avaliação e relato na plataforma e solicitar mediação, sem que isso suspenda ou impeça o repasse ao prestador, que executou o serviço contratado.
+
+5.6.3 Considerando a natureza do serviço de limpeza, cujo resultado é verificável de imediato e se altera com o uso normal do imóvel nos dias subsequentes, a contestação deverá ser registrada dentro do prazo de confirmação previsto no item 5.5.
+
+5.6.4 Registrada a contestação nas hipóteses do item 5.6.1 e dentro do prazo, o valor permanecerá retido, sem liberação ao prestador, até a conclusão da análise, ao fim da qual será liberado ao prestador ou devolvido ao contratante.
+
+5.6.5 Decorrido o prazo sem manifestação, encerra-se o mecanismo interno de retenção e o repasse é liberado. A perda desse prazo refere-se exclusivamente ao mecanismo interno de retenção de valores e não afasta os direitos assegurados ao contratante pela legislação aplicável.
+
+5.7 Pagamento exclusivamente pela plataforma
+Atenção: a Limpay nunca solicita pagamentos fora da plataforma. Não responda a mensagens pedindo transferências, PIX ou qualquer forma de pagamento externo ao aplicativo; reporte imediatamente ao suporte como tentativa de golpe.
+
+• Todos os pagamentos de serviços contratados pelo aplicativo Limpay devem ser realizados exclusivamente dentro da plataforma, via Mercado Pago.
+
+• É estritamente proibido ao prestador cobrar valores adicionais ou complementares fora da plataforma por serviços já pagos pelo contratante no aplicativo.
+
+• A Limpay nunca envia mensagens, e-mails ou notificações solicitando pagamentos por fora do aplicativo. Qualquer comunicação desse tipo deve ser tratada como tentativa de golpe.
+
+• Caso o usuário receba mensagens solicitando pagamentos externos, atribuindo-se a identidade da Limpay, deve reportar imediatamente ao suporte pelo canal oficial.
+
+• O descumprimento desta cláusula poderá resultar no encerramento definitivo do cadastro, nos termos da Cláusula 15.
+
+5.8 Retenções por segurança
+Além da custódia ordinária prevista no item 5.3, a Limpay poderá manter o valor retido, sem liberação ao prestador, nas hipóteses de contestação registrada no prazo, suspeita de fraude, cancelamento, necessidade de verificação de segurança ou descumprimento destes Termos, pelo tempo necessário à análise. Concluída a análise, o valor será liberado ao prestador ou devolvido ao contratante, conforme o caso, na forma do item 5.3.
+
+5.9 Estornos e reversões
+Em caso de estorno, contestação ou reversão de pagamento por parte do contratante ou de instituição financeira, a Limpay poderá suspender, compensar ou ajustar valores a serem repassados ao prestador.
+
+5.10 Dados bancários e instituições financeiras
+A Limpay não se responsabiliza por falhas decorrentes de dados bancários incorretos fornecidos pelos usuários ou por indisponibilidades de instituições financeiras.
+
+5.11 Taxas de meios de pagamento
+As transações realizadas na plataforma poderão estar sujeitas a taxas cobradas por operadoras de pagamento, instituições financeiras, bandeiras de cartão de crédito, bancos ou outros intermediadores, conforme o meio de pagamento escolhido pelo contratante.
+
+Tais custos poderão ser repassados ao contratante e/ou ao prestador, ou descontados dos valores transacionados, conforme política vigente da plataforma no momento da contratação.
+
+6. CANCELAMENTOS E REEMBOLSOS
+6.1 Cancelamento realizado pelo contratante antes do dia do serviço: reembolso integral de 100% do valor pago.
+
+6.2 Cancelamento realizado pelo contratante no mesmo dia do serviço: não haverá reembolso. Tendo o prestador reservado sua agenda para o atendimento, o valor permanecerá retido na forma do item 5.3 e será repassado ao prestador a título de compensação pela reserva, em até 48 (quarenta e oito) horas contadas do cancelamento, observadas as taxas do item 5.2 e os prazos da instituição financeira intermediadora.
+
+6.3 Cancelamento realizado pelo prestador no dia do serviço: reembolso integral de 100% ao contratante. O prestador não receberá nenhum valor pelo serviço cancelado.
+
+6.4 Não comparecimento do prestador no local e horário agendados, sem cancelamento prévio: reembolso integral de 100% ao contratante, na forma do item 5.6.1, alínea “a”.
+
+6.5 Cancelamento automático por não confirmação do prestador em até 2 (duas) horas após o pagamento: reembolso integral de 100% ao contratante.
+
+6.6 A Limpay não se responsabiliza por atrasos no processamento de reembolsos ocasionados pelo Mercado Pago ou pelas operadoras de cartão de crédito.
+
+7. RESPONSABILIDADES DA PLATAFORMA
+7.1 Natureza da atuação
+A Limpay atua exclusivamente como intermediadora tecnológica, não sendo responsável pela prestação direta dos serviços contratados entre os usuários.
+
+7.2 Isenção de responsabilidade
+A Limpay não se responsabiliza por quaisquer atos, omissões ou condutas dos usuários da plataforma, incluindo, mas não se limitando a:
+
+a) Qualidade, adequação ou resultado dos serviços prestados;
+
+b) Danos materiais, morais, estéticos ou lucros cessantes;
+
+c) Perdas, furtos, extravios ou danos a bens;
+
+d) Atrasos, cancelamentos ou não comparecimento;
+
+e) Descumprimento de obrigações assumidas entre contratante e prestador.
+
+7.3 Relação entre usuários
+A relação estabelecida entre contratante e prestador é direta, autônoma e independente, não havendo qualquer ingerência da Limpay na execução dos serviços.
+
+7.4 Limitação de garantias
+A Limpay não garante a qualidade, segurança, continuidade, pontualidade ou adequação dos serviços prestados pelos usuários, sendo tais responsabilidades exclusivas dos envolvidos na contratação.
+
+7.5 Uso da plataforma
+O uso da plataforma ocorre por conta e risco dos usuários, que reconhecem a Limpay como mera facilitadora da conexão entre as partes.
+
+7.6 Mediação de conflitos
+A Limpay poderá, a seu exclusivo critério, atuar como mediadora em disputas entre usuários, sem assumir responsabilidade pelo resultado ou pelas obrigações decorrentes da relação entre as partes.
+
+8. RESPONSABILIDADES DO PRESTADOR
+8.1 Natureza da atividade
+O prestador declara atuar como profissional autônomo e independente, sem qualquer vínculo empregatício com a Limpay.
+
+8.2 Responsabilidade pela execução
+O prestador é integralmente responsável pela execução dos serviços, incluindo qualidade, prazos, segurança e resultado.
+
+8.3 Autonomia profissional
+O prestador possui total autonomia para:
+
+a) Definir seus horários de trabalho;
+
+b) Aceitar ou recusar serviços;
+
+c) Definir sua forma de execução.
+
+8.4 Materiais e equipamentos
+O fornecimento de materiais, ferramentas e equipamentos necessários à execução dos serviços é combinado diretamente entre prestador e contratante, conforme acordo entre as partes, quando aplicável.
+
+8.5 Ausência de exclusividade
+Não há qualquer obrigação de exclusividade entre o prestador e a Limpay, podendo o profissional atuar em outras plataformas ou de forma independente.
+
+8.6 Ausência de garantia de demanda
+A Limpay não garante ao prestador qualquer volume mínimo de solicitações ou renda.
+
+9. EXECUÇÃO PESSOAL E CONTA INTRANSFERÍVEL
+9.1 A conta na Limpay é pessoal e intransferível. Em razão da verificação de identidade prevista na Cláusula 4 e da segurança do contratante, que recebe o prestador em seu domicílio, o serviço deve ser executado exclusivamente pelo titular do perfil visualizado e contratado.
+
+9.2 É vedado ao prestador permitir que terceiro não cadastrado e não verificado pela plataforma execute o serviço em seu lugar, ainda que familiar, amigo ou outro profissional.
+
+9.3 Esta vedação não restringe a autonomia do prestador, que permanece livre para aceitar, recusar ou cancelar qualquer solicitação. Não podendo comparecer, o prestador deverá cancelar pela plataforma, hipótese em que o serviço poderá ser reofertado a outro prestador cadastrado e verificado, mediante ciência e concordância do contratante.
+
+9.4 Constatada a execução por pessoa diversa do prestador contratado, o serviço será considerado não executado, com devolução integral do valor ao contratante, na forma do item 5.3.
+
+9.5 A hipótese poderá ensejar a restrição de acesso e a análise do cadastro, assegurada ao prestador a oportunidade de manifestação. Em caso de fraude, reincidência ou risco à segurança do contratante, o cadastro poderá ser encerrado em definitivo, nos termos da Cláusula 15. A medida não alcança valores já devidos por serviços anteriormente executados de forma regular, observado o item 15.6.
+
+9.6 Caso o contratante receba pessoa diferente do prestador contratado, deve recusar o serviço e acionar imediatamente o suporte da Limpay.
+
+10. RESPONSABILIDADES DO CONTRATANTE
+10.1 Informações prestadas
+O contratante se compromete a fornecer informações verídicas, completas e atualizadas no momento da contratação do serviço, incluindo endereço, detalhes da atividade e condições do local.
+
+10.2 Cumprimento de horários
+Por se tratar de prestação de serviço na modalidade diária, o horário deverá ser previamente combinado entre as partes, respeitando os limites legais aplicáveis. O contratante compromete-se a garantir o acesso ao local no horário acordado, possibilitando a adequada execução do serviço.
+
+10.3 Limitação do escopo do serviço
+Por se tratar de plataforma de intermediação, o escopo do serviço será livremente definido entre contratante e prestador, por meio de acordo direto entre as partes, inclusive quanto às atividades a serem realizadas, desde que respeitadas as disposições legais aplicáveis.
+
+10.4 Condições do ambiente
+Por se tratar de plataforma de intermediação, as condições do ambiente para execução do serviço serão livremente acordadas entre contratante e prestador, cabendo às partes definir e assegurar que o local esteja adequado e seguro, em conformidade com a legislação aplicável.
+
+10.5 Materiais de limpeza
+Por se tratar de plataforma de intermediação, o fornecimento de materiais, produtos de limpeza e equipamentos necessários à execução do serviço será livremente acordado entre contratante e prestador, não sendo a Limpay responsável por sua disponibilização.
+
+10.6 Conduta e respeito
+Por se tratar de plataforma de intermediação, eventuais condutas adotadas durante a execução do serviço são de exclusiva responsabilidade das partes envolvidas, não sendo a Limpay responsável por comportamentos, atos ou omissões do contratante ou do prestador, devendo tais condutas observar a legislação vigente.
+
+10.7 Responsabilidade por terceiros e local
+O contratante é responsável por pessoas presentes no local, bem como por animais, objetos e condições que possam impactar a execução do serviço.
+
+11. LIMITAÇÃO DO SERVIÇO
+A Limpay atua exclusivamente como plataforma de intermediação, limitando-se a conectar contratantes e prestadores de serviços. Dessa forma, não participa, interfere ou se responsabiliza pela execução, qualidade, segurança, pontualidade ou resultado dos serviços contratados, sendo tais responsabilidades integralmente atribuídas às partes envolvidas.
+
+12. AUTONOMIA DE HORÁRIOS E DISPONIBILIDADE
+A Limpay não exerce qualquer controle sobre os horários, a disponibilidade ou a forma de execução dos serviços prestados pelos usuários cadastrados, sendo tais condições livremente definidas entre as partes.
+
+Os prestadores de serviço atuam de forma autônoma, sendo responsáveis pelo cumprimento da legislação aplicável às suas atividades, não havendo qualquer vínculo empregatício com a Limpay.
+
+13. SISTEMA DE AVALIAÇÃO E REPUTAÇÃO
+A Limpay poderá adotar sistema de avaliação baseado em notas, comentários e histórico de serviços realizados.
+
+Os usuários reconhecem que as avaliações refletem opiniões individuais dos demais usuários, não representando avaliação de desempenho profissional nem garantia de qualidade por parte da plataforma.
+
+A Limpay se reserva o direito de moderar e remover conteúdos inadequados, bem como de restringir o acesso de perfis que não se adequem a estes Termos de Uso, nos termos da Cláusula 15, sem que isso gere qualquer direito à indenização.
+
+14. MODERAÇÃO E REMOÇÃO DE CONTEÚDO
+A Limpay, na qualidade de plataforma de intermediação, poderá, a seu exclusivo critério, analisar e remover conteúdos, perfis ou informações que sejam objeto de denúncia ou que violem a legislação vigente ou estes Termos de Uso.
+
+As denúncias poderão ser realizadas por meio do canal de atendimento disponibilizado, incluindo o e-mail: limpayconect.suporte@gmail.com.
+
+A Limpay não se responsabiliza pelo conteúdo gerado pelos usuários, atuando apenas como intermediadora, podendo adotar as medidas previstas na Cláusula 15 quando tomar conhecimento de eventuais irregularidades.
+
+15. RESTRIÇÃO DE ACESSO E ENCERRAMENTO DE CADASTRO
+15.1 A Limpay não exerce poder disciplinar sobre os usuários e não aplica advertências, penalidades ou sanções de qualquer natureza. As medidas previstas nesta cláusula têm natureza estritamente contratual e referem-se exclusivamente ao acesso e à permanência no ambiente digital da plataforma.
+
+15.2 A Limpay poderá restringir o acesso ou encerrar o cadastro de qualquer usuário, contratante ou prestador, nas hipóteses de: (a) descumprimento destes Termos; (b) informações falsas, incompletas ou desatualizadas no cadastro; (c) execução do serviço por pessoa diversa da cadastrada, nos termos da Cláusula 9; (d) cobrança ou pagamento fora da plataforma, nos termos do item 5.7; (e) indícios de fraude; (f) adoção de medida administrativa decorrente de comunicação de ocorrência, na forma do item 17.6; (g) não atendimento aos critérios objetivos de manutenção do cadastro, previamente divulgados e aplicados de forma igual a todos os usuários.
+
+15.3 As hipóteses desta cláusula aplicam-se igualmente a contratantes e prestadores.
+
+15.4 A restrição de acesso ou o encerramento do cadastro não constitui, em nenhuma hipótese, exercício de poder diretivo, controle de jornada, avaliação de desempenho profissional ou subordinação, não configurando vínculo empregatício nem medida de natureza trabalhista.
+
+15.5 O encerramento do cadastro não impede o usuário de exercer sua atividade de forma independente ou por meio de outras plataformas, e não gera direito a indenização.
+
+15.6 Valores já devidos por serviços regularmente executados serão repassados normalmente, ainda que após o encerramento do cadastro, ressalvadas as hipóteses de retenção e ajuste dos itens 5.8 e 5.9.
+
+15.7 O usuário poderá apresentar manifestação pelo canal oficial de atendimento, que será analisada, podendo o acesso ser restabelecido.
+
+16. ENCERRAMENTO POR INICIATIVA DO USUÁRIO
+16.1 O usuário poderá encerrar sua conta a qualquer momento, sem custo, por meio do aplicativo ou do canal oficial de atendimento.
+
+16.2 O encerramento não afasta as obrigações assumidas até então, nem os serviços já contratados e ainda não executados, que seguirão as regras das Cláusulas 5 e 6.
+
+16.3 Valores já devidos ao prestador por serviços regularmente executados serão repassados normalmente, observados os itens 5.8 e 5.9.
+
+16.4 O tratamento dos dados pessoais após o encerramento observará o disposto na Cláusula 19.
+
+17. DISPUTAS, DANOS E OCORRÊNCIAS DE NATUREZA CRIMINAL
+17.1 A Limpay não é responsável por disputas, conflitos ou divergências ocorridas entre os usuários.
+
+17.2 A plataforma poderá, a seu exclusivo critério, disponibilizar meios para tentativa de mediação, sem qualquer obrigação de intervir ou solucionar o conflito.
+
+17.3 Eventual mediação realizada terá caráter meramente facilitador e não vinculante, não implicando assunção de responsabilidade, garantia de resultado ou obrigação de indenizar por qualquer das partes.
+
+17.4 Comunicação de ocorrências. Em caso de furto, roubo, dano ao patrimônio, agressão, ameaça, assédio ou qualquer outro fato que possa configurar ilícito, ocorrido antes, durante ou após a execução do serviço, o usuário deverá: (a) registrar imediatamente ocorrência perante a autoridade policial competente; e (b) comunicar o fato à Limpay pelo canal oficial de atendimento, informando o número do boletim de ocorrência quando disponível.
+
+17.5 Ausência de atividade investigativa. A Limpay não possui atribuição, poder legal ou meios para investigar fatos, produzir provas, apurar autoria ou arbitrar responsabilidade civil ou penal entre usuários, atividade privativa das autoridades públicas competentes. A comunicação à plataforma não substitui, em nenhuma hipótese, o registro da ocorrência perante a autoridade policial.
+
+17.6 Medidas administrativas. Recebida a comunicação, a Limpay poderá adotar, a seu exclusivo critério e no âmbito exclusivo do uso da plataforma, medidas como a restrição preventiva de acesso, o bloqueio de novos agendamentos entre os usuários envolvidos e o encerramento definitivo do cadastro. Tais medidas têm natureza estritamente contratual, não implicam reconhecimento de responsabilidade da Limpay nem juízo sobre a veracidade dos fatos relatados.
+
+17.7 Cooperação com autoridades. A Limpay fornecerá informações e dados cadastrais em sua posse mediante requisição de autoridade policial ou judicial, na forma da legislação aplicável e da Lei Geral de Proteção de Dados. Os dados pessoais de um usuário não serão fornecidos diretamente a outro usuário.
+
+17.8 Aplicação recíproca. O disposto nesta cláusula aplica-se igualmente a contratantes e prestadores.
+
+18. NATUREZA DA RELAÇÃO E DA INTERMEDIAÇÃO
+18.1 Natureza da relação
+A Limpay atua como plataforma digital de intermediação, conectando usuários interessados na contratação de serviços com prestadores autônomos, bem como facilitando o processamento dos pagamentos entre as partes.
+
+A Limpay não é parte na relação contratual estabelecida entre contratante e prestador, limitando-se à intermediação tecnológica e financeira da operação.
+
+A relação entre contratante e prestador é direta, independente e de natureza civil, inexistindo qualquer vínculo empregatício, societário ou de subordinação com a Limpay.
+
+Os prestadores atuam por conta própria, sendo integralmente responsáveis pela execução dos serviços, bem como por suas obrigações legais, fiscais e trabalhistas.
+
+18.2 Natureza de intermediação da plataforma
+A Limpay constitui-se como plataforma digital de intermediação, cujo objetivo é exclusivamente aproximar usuários interessados na oferta e na contratação de serviços, de forma similar a outros aplicativos de intermediação disponíveis no mercado, como plataformas de mobilidade e conexão social.
+
+A Limpay não participa da relação entre os usuários, não interfere nas negociações, não define condições, não presta os serviços anunciados e não exerce qualquer tipo de direção, controle, supervisão ou subordinação sobre os prestadores ou contratantes.
+
+Todas as interações, acordos e responsabilidades decorrentes da prestação de serviços são estabelecidos diretamente entre as partes, de forma independente, inexistindo qualquer vínculo empregatício, societário ou associativo com a Limpay, além da própria utilização da plataforma.
+
+19. PRIVACIDADE E PROTEÇÃO DE DADOS (LGPD)
+A Limpay realiza o tratamento de dados pessoais dos usuários em conformidade com a legislação vigente, especialmente a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).
+
+A Limpay coleta os dados pessoais necessários ao funcionamento da plataforma, incluindo: nome completo, e-mail, telefone, CPF, foto de perfil, selfie, documentos de identidade e chave PIX (prestadores), além de endereço e informações do imóvel (contratantes).
+
+Os dados coletados são utilizados para: verificação de identidade, viabilização do funcionamento da plataforma e da intermediação dos serviços, processamento de pagamentos, comunicação entre usuários, segurança, prevenção a fraudes, melhoria dos serviços e comunicações relacionadas ao uso da plataforma.
+
+A base legal para o tratamento dos dados é a execução do contrato de uso da plataforma, o cumprimento de obrigações legais e regulatórias e o legítimo interesse da Limpay, nos termos da Lei Geral de Proteção de Dados.
+
+Ao utilizar a plataforma, o usuário declara estar ciente da coleta e do tratamento de seus dados para as finalidades aqui descritas.
+
+A Limpay não comercializa, vende ou compartilha dados pessoais dos usuários com terceiros, exceto quando necessário ao processamento de pagamentos pela instituição financeira intermediadora (atualmente o Mercado Pago) ou por determinação legal.
+
+Os dados são armazenados em servidores seguros e protegidos por medidas técnicas e administrativas adequadas para prevenir acessos não autorizados. A Limpay não se responsabiliza por acessos indevidos decorrentes de falhas exclusivas de terceiros ou do próprio usuário.
+
+19.1 Exclusão da conta e conservação de dados
+O usuário pode, a qualquer momento, solicitar o encerramento de sua conta e a exclusão de seus dados pessoais, pelo próprio aplicativo ou pelo canal oficial de atendimento. Atendida a solicitação, o perfil é desativado e deixa de ser exibido na plataforma.
+
+Nos termos do artigo 16 da Lei Geral de Proteção de Dados, determinados dados serão conservados em base de acesso restrito, ainda que a conta seja encerrada, nas seguintes hipóteses:
+
+a) cumprimento de obrigação legal ou regulatória, incluindo os registros fiscais e financeiros das transações intermediadas;
+
+b) guarda dos registros de acesso à aplicação, pelo prazo mínimo de 6 (seis) meses, nos termos do artigo 15 do Marco Civil da Internet (Lei nº 12.965/2014);
+
+c) exercício regular de direitos em processo judicial, administrativo ou arbitral, e atendimento a requisições de autoridades competentes, até o decurso dos prazos prescricionais aplicáveis.
+
+Os dados conservados não são utilizados para qualquer outra finalidade, não são exibidos a outros usuários e permanecem submetidos às medidas de segurança da plataforma. Decorridos os prazos legais, serão eliminados ou anonimizados.
+
+O encerramento da conta não afasta obrigações financeiras eventualmente pendentes, que permanecerão exigíveis.
+
+20. ALTERAÇÕES NESTES TERMOS
+A Limpay reserva-se o direito de alterar estes Termos de Uso a qualquer momento, comprometendo-se a comunicar os usuários por meio da plataforma ou de outros canais adequados.
+
+O uso continuado da plataforma após a entrada em vigor das alterações implica a aceitação dos novos termos.
+
+Caso o usuário não concorde com as alterações, deve encerrar sua conta antes da data de vigência dos novos termos.
+
+21. DISPOSIÇÕES GERAIS
+O uso da plataforma implica a concordância integral com estes Termos de Uso.
+
+Caso qualquer disposição destes Termos seja considerada inválida ou inexequível, as demais permanecerão em pleno vigor.
+
+Estes Termos não criam qualquer vínculo empregatício, societário ou de parceria entre a Limpay e seus usuários.
+
+Fica eleito o foro da comarca de domicílio da Limpay para dirimir quaisquer controvérsias oriundas destes Termos.
+
+Ao criar sua conta na Limpay, você confirma ter lido, compreendido e aceito integralmente estes Termos de Uso e Política de Privacidade.
+
+Limpay · CNPJ 66.937.666/0001-89
+
+limpayconect@gmail.com | Suporte: limpayconect.suporte@gmail.com
+
+Versão 1.2 | Agosto de 2026</pre>
+      </article>
+
+      <p class="footer-note">Documento de referência da plataforma Limpay.</p>
+    </main>
+  </body>
+</html>

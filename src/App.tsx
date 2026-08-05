@@ -341,6 +341,9 @@ function App() {
           </span>
           <span className="top-header__handle">@limpayconect</span>
         </a>
+        <a className="top-header__terms-link" href="/termos.html">
+          Termos
+        </a>
       </header>
 
       <section className="hero-section">

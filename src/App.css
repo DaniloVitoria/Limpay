@@ -94,6 +94,33 @@
   letter-spacing: 0.03em;
 }
 
+.top-header__terms-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.125rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 62.5rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.top-header__terms-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
 .hero-section {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
