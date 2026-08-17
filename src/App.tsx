@@ -483,8 +483,8 @@ function App() {
         </div>
 
         <nav aria-label="Rodapé">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Termos de Uso</a>
+          <a href="/politicadeprivacidade.html">Política de Privacidade</a>
+          <a href="/termos.html">Termos de Uso</a>
           <a href="#">Redes sociais</a>
           <a href="#">Contato</a>
           
