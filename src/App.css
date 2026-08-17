@@ -755,9 +755,9 @@ h1 {
   gap: 0.75rem;
   padding: 1rem;
   border-radius: 1.5rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 18px 40px rgba(3, 12, 40, 0.12);
+  background: rgba(248, 250, 255, 0.94);
+  border: 1px solid rgba(13, 28, 61, 0.12);
+  box-shadow: 0 18px 40px rgba(3, 12, 40, 0.16);
   backdrop-filter: blur(12px);
 }
 
@@ -772,7 +772,7 @@ h1 {
 
 .faq-card__eyebrow {
   margin: 0;
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(13, 28, 61, 0.7);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -781,7 +781,7 @@ h1 {
 
 .faq-card h3 {
   margin: 0;
-  color: #ffffff;
+  color: #0d1c3d;
   font-size: 1.45rem;
   line-height: 1.15;
 }
@@ -793,8 +793,8 @@ h1 {
 
 .faq-item {
   border-radius: 1.125rem;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 26, 59, 0.06);
+  border: 1px solid rgba(13, 28, 61, 0.1);
   overflow: hidden;
 }
 
@@ -804,7 +804,7 @@ h1 {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.125rem;
-  color: #ffffff;
+  color: #0d1c3d;
   cursor: pointer;
   list-style: none;
   font-weight: 700;
@@ -823,8 +823,8 @@ h1 {
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: rgba(13, 28, 61, 0.1);
+  color: #0d1c3d;
   font-size: 1rem;
   transition: transform 180ms ease;
 }
@@ -837,7 +837,7 @@ h1 {
   display: grid;
   gap: 0.6rem;
   padding: 0 1.125rem 0.9rem;
-  color: rgba(255, 255, 255, 0.84);
+  color: rgba(13, 28, 61, 0.88);
   line-height: 1.6;
 }
 
@@ -859,7 +859,7 @@ h1 {
 .faq-card__note {
   margin: 0;
   padding-top: 0.25rem;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(13, 28, 61, 0.72);
   font-size: 0.9rem;
   letter-spacing: 0.04em;
 }

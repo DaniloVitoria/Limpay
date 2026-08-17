@@ -52,271 +52,181 @@ type FaqSection = {
 
 const faqSections: FaqSection[] = [
   {
-    title: 'Sobre a Limpay',
+    title: 'Sobre a LIMPAY',
     items: [
       {
-        question: 'O que é a Limpay?',
-        answer: [
-          'A Limpay é uma plataforma digital que conecta pessoas que precisam de uma faxina a profissionais de limpeza autônomos, verificados e avaliados. Todo o processo acontece pelo aplicativo: você agenda, paga e confirma o serviço em um só lugar.',
-        ],
+        question: 'O que é a LIMPAY?',
+        answer: ['A LIMPAY é uma plataforma que conecta clientes a profissionais autônomos de limpeza.'],
       },
       {
-        question: 'A Limpay é uma empresa de limpeza? Vocês contratam as profissionais?',
-        answer: [
-          'Não. A Limpay não presta serviços de limpeza e não contrata as profissionais. Nós somos a tecnologia que faz a ponte entre quem precisa e quem oferece o serviço, além de cuidar do pagamento com segurança.',
-          'As profissionais são autônomas e independentes: definem os próprios horários, aceitam ou recusam os serviços que quiserem e podem atuar em outras plataformas. Não existe vínculo empregatício com a Limpay.',
-        ],
+        question: 'A LIMPAY presta o serviço de limpeza?',
+        answer: ['Não. A LIMPAY apenas faz a intermediação entre clientes e profissionais.'],
       },
       {
-        question: 'Em quais cidades a Limpay funciona?',
-        answer: [
-          'Estamos crescendo — se a sua região ainda não aparece no app, cadastre-se mesmo assim e avisaremos assim que chegarmos aí.',
-        ],
-      },
-      {
-        question: 'Quanto custa usar a Limpay?',
-        answer: [
-          'Não há mensalidade nem taxa de cadastro. A Limpay cobra uma taxa de serviço apenas sobre os serviços efetivamente contratados: 15% para quem contrata e 5% para o profissional.',
-        ],
+        question: 'A LIMPAY é responsável pela profissional que realiza o serviço?',
+        answer: ['A profissional atua de forma autônoma e é responsável pela execução do serviço.'],
       },
     ],
   },
   {
-    title: 'Para quem vai contratar',
+    title: 'Para profissionais',
     items: [
       {
-        question: 'Como contrato uma faxina?',
-        answer: [
-          'Você cria sua conta com foto de perfil, informa o endereço e os dados do imóvel, escolhe o dia e o horário e faz o pagamento pelo app. A partir daí a solicitação é enviada aos profissionais disponíveis e você recebe a confirmação.',
-        ],
+        question: 'Como faço meu cadastro?',
+        answer: ['Você precisa preencher seus dados, adicionar uma foto real e enviar CPF e selfie para verificação.'],
       },
       {
-        question: 'Como funciona o pagamento?',
-        answer: [
-          'O pagamento é feito no momento do agendamento, dentro do aplicativo, por Pix ou cartão de crédito, através do Mercado Pago.',
-          'O valor não vai direto para a profissional: ele fica retido em conta da Limpay até o serviço ser realizado. Só depois da execução e da confirmação é que o repasse acontece.',
-        ],
+        question: 'Minha conta é aprovada imediatamente?',
+        answer: ['Não. O cadastro passa por uma análise antes da ativação.'],
       },
       {
-        question: 'Por que o dinheiro fica retido?',
-        answer: [
-          'É a sua segurança. Enquanto o serviço não é executado, o valor não pertence à profissional e não fica disponível para ela. Se a faxina não acontecer, por qualquer motivo, o dinheiro volta integralmente para você.',
-        ],
+        question: 'Outra pessoa pode realizar o serviço no meu lugar?',
+        answer: ['Não. O serviço deve ser realizado pelo profissional cadastrado e contratado.'],
       },
       {
-        question: 'Preciso fornecer os produtos e materiais de limpeza?',
-        answer: [
-          'Isso é combinado diretamente entre você e a profissional antes do serviço. A Limpay não fornece materiais nem equipamentos. Nossa recomendação é deixar isso alinhado no chat do app, para que não haja surpresa no dia.',
-        ],
+        question: 'Posso escolher os dias em que quero trabalhar?',
+        answer: ['Sim. O profissional define sua própria disponibilidade e pode aceitar ou recusar solicitações.'],
       },
       {
-        question: 'Preciso estar em casa durante a faxina?',
-        answer: [
-          'Não é obrigatório, mas alguém precisa garantir o acesso ao imóvel no horário combinado. Você é responsável pelas pessoas, animais e objetos presentes no local durante o serviço.',
-        ],
+        question: 'A LIMPAY garante uma quantidade de serviços?',
+        answer: ['Não. A plataforma não garante quantidade mínima de solicitações ou renda.'],
       },
       {
-        question: 'Como confirmo que o serviço foi realizado?',
-        answer: [
-          'Quando a profissional finaliza, ela registra a conclusão no app e você recebe uma notificação para confirmar ou relatar um problema.',
-        ],
-        bullets: [
-          'Passo 1 - a profissional marca o serviço como concluído.',
-          'Passo 2 - você tem 24 horas para confirmar ou contestar.',
-          'Passo 3 - confirmado, o pagamento é processado em até 48 horas.',
-          'Se você não responder dentro de 24 horas, o serviço é considerado confirmado automaticamente e o pagamento segue para a profissional.',
-        ],
+        question: 'O que é a taxa de intermediação?',
+        answer: ['É o valor cobrado pela LIMPAY pela utilização da plataforma e pela intermediação dos serviços.'],
       },
       {
-        question: 'A profissional não apareceu, ou o serviço não foi realizado. O que faço?',
-        answer: [
-          'Registre a contestação no aplicativo dentro do prazo de 24 horas após a notificação de conclusão. Enquanto a contestação está em análise, o valor continua retido e não é repassado.',
-          'A contestação serve para fatos objetivos: a profissional não compareceu, quem apareceu foi outra pessoa, o serviço não foi iniciado ou foi interrompido sem justificativa, houve cobrança por fora do app ou indício de fraude. Confirmada a situação, o valor é devolvido a você.',
-          'O prazo é curto porque a limpeza é verificável na hora: o resultado muda com o uso normal da casa nos dias seguintes. Por isso, confira o serviço ainda no mesmo dia.',
-        ],
+        question: 'Quando recebo pelo serviço?',
+        answer: ['Após a conclusão e confirmação do serviço, o repasse é processado em até 48 horas.'],
       },
       {
-        question: 'Não gostei da qualidade da faxina. Posso pedir o dinheiro de volta?',
-        answer: [
-          'A Limpay conecta você a profissionais autônomos e não avalia nem garante o resultado do trabalho, que é responsabilidade de quem executa. Se o serviço foi realizado, o valor é devido à profissional.',
-          'O que você pode fazer é registrar sua avaliação e seu relato — eles ficam visíveis para outros usuários e fazem parte dos critérios de permanência na plataforma — e acionar o suporte, que pode mediar a conversa. Na próxima faxina, você escolhe outro profissional.',
-          'A devolução do valor se aplica quando o serviço não foi realizado, e não quando o resultado ficou aquém do esperado.',
-        ],
-      },
-      {
-        question: 'Posso cancelar? Recebo o dinheiro de volta?',
-        answer: [
-          'Os prazos de crédito do estorno seguem o Mercado Pago e a operadora do seu cartão.',
-        ],
-        bullets: [
-          'Você cancelou antes do dia do serviço: reembolso de 100%.',
-          'Você cancelou no mesmo dia: não há reembolso. Como a profissional reservou a agenda dela para o seu atendimento, o valor é repassado a ela a título de compensação pela reserva.',
-          'A profissional cancelou no dia: reembolso de 100% para você, e ela não recebe nada.',
-          'A profissional não apareceu, sem cancelar: reembolso de 100% para você.',
-          'Ninguém aceitou o serviço em até 2 horas após o pagamento: cancelamento automático com reembolso de 100%.',
-        ],
-      },
-      {
-        question: 'Apareceu uma pessoa diferente da que eu contratei. O que faço?',
-        answer: [
-          'Recuse o serviço e acione o suporte imediatamente. A conta na Limpay é pessoal e intransferível: só pode executar o serviço a profissional cujo perfil você viu e contratou, porque é ela quem passou pela nossa verificação de identidade.',
-          'Nesse caso o serviço é tratado como não executado e o valor é devolvido integralmente a você.',
-        ],
-      },
-      {
-        question: 'As profissionais são verificadas?',
-        answer: [
-          'Sim. Para ativar a conta, a profissional envia CPF válido, selfie e documento de identidade, e o cadastro é revisado manualmente pela equipe da Limpay antes da liberação. A foto de perfil é obrigatória, precisa ser real e atual, e mostrar claramente o rosto.',
-          'Você também vê as avaliações e o histórico de serviços de cada profissional antes de contratar.',
-        ],
-      },
-      {
-        question: 'E se algo for danificado ou desaparecer durante o serviço?',
-        answer: [
-          'Registre imediatamente um boletim de ocorrência na delegacia. Furto, dano e qualquer outro crime são apurados pelas autoridades competentes — a Limpay não investiga fatos, não produz provas e não decide quem tem razão.',
-          'Depois de registrar, comunique o ocorrido pelo canal oficial de atendimento, informando o número do B.O. Com isso podemos adotar medidas na conta envolvida, como a restrição preventiva de acesso, o bloqueio de novos agendamentos entre as pessoas envolvidas e o encerramento definitivo do cadastro.',
-          'Fornecemos as informações que temos mediante requisição da polícia ou da Justiça. Por proteção de dados, não repassamos dados pessoais de um usuário para outro.',
-          'Essa regra vale nos dois sentidos: também protege a profissional que sofra furto, agressão ou assédio durante o atendimento.',
-        ],
-      },
-      {
-        question: 'Como funciona a avaliação?',
-        answer: [
-          'Depois de cada serviço você pode dar uma nota e deixar um comentário. As avaliações ajudam outros clientes a escolher e fazem parte dos critérios que usamos para manter o padrão da plataforma. Conteúdos ofensivos ou inverídicos podem ser removidos.',
-        ],
+        question: 'Preciso trabalhar exclusivamente pela LIMPAY?',
+        answer: ['Não. Você pode trabalhar em outras plataformas ou de forma independente.'],
       },
     ],
   },
   {
-    title: 'Para quem vai trabalhar',
+    title: 'Para clientes',
     items: [
       {
-        question: 'Como faço para me cadastrar como profissional?',
-        answer: [
-          'Baixe o app, escolha o perfil de profissional e envie seus dados: nome completo, CPF válido, foto de perfil, selfie e documento de identidade, além da sua chave Pix para receber.',
-          'A conta é criada com status “pendente de aprovação” e só é ativada depois da revisão manual da nossa equipe.',
-        ],
+        question: 'Como contrato um profissional?',
+        answer: ['Você escolhe um profissional disponível e agenda o serviço pela plataforma.'],
       },
       {
-        question: 'Preciso pagar alguma coisa para me cadastrar?',
-        answer: [
-          'Não. O cadastro é gratuito e não existe mensalidade. A Limpay só ganha quando você ganha: a taxa é de 5% sobre o valor do serviço, descontada no repasse.',
-        ],
+        question: 'Posso combinar os detalhes do serviço com o profissional?',
+        answer: ['Sim. Atividades, horários, materiais e condições do serviço são combinados diretamente entre as partes.'],
       },
       {
-        question: 'Quando eu recebo pelo serviço?',
-        answer: [
-          'Em até 72 horas após a conclusão do serviço:',
-        ],
-        bullets: [
-          '24 horas - prazo do cliente para confirmar ou contestar. Se ele não responder, o sistema confirma automaticamente.',
-          '+ 48 horas - prazo de processamento do pagamento pela instituição financeira.',
-          'No cartão de crédito, o crédito segue também a modalidade de recebimento que você escolheu junto ao Mercado Pago.',
-        ],
+        question: 'Quem fornece os materiais de limpeza?',
+        answer: ['Isso é combinado diretamente entre cliente e profissional.'],
       },
       {
-        question: 'O cliente não confirmou o serviço. Vou receber?',
-        answer: [
-          'Sim. Se o cliente não se manifestar em 24 horas, o serviço é considerado automaticamente confirmado e o pagamento é liberado normalmente.',
-        ],
+        question: 'Posso cancelar um serviço?',
+        answer: ['Sim. As condições de reembolso dependem do momento do cancelamento.'],
       },
       {
-        question: 'O cliente contestou o serviço. E agora?',
-        answer: [
-          'O valor fica retido enquanto a Limpay analisa. Você será ouvida e poderá enviar fotos e sua versão do que aconteceu. Concluída a análise, o valor é liberado para você ou devolvido ao cliente, conforme o resultado.',
-        ],
+        question: 'Se eu cancelar antes do dia do serviço, recebo meu dinheiro de volta?',
+        answer: ['Sim. O reembolso é integral.'],
       },
       {
-        question: 'E se o cliente cancelar no dia do serviço?',
-        answer: [
-          'Você recebe. Como a data já estava reservada para aquele atendimento, o cancelamento feito pelo cliente no mesmo dia não gera reembolso a ele: o valor é repassado a você a título de compensação pela reserva, em até 48 horas contadas do cancelamento, com as taxas normais.',
-          'Se o cancelamento partir de você, no dia do serviço, o cliente recebe 100% de volta e não há valor a repassar.',
-        ],
+        question: 'E se eu cancelar no mesmo dia?',
+        answer: ['Nesse caso, não há reembolso, e o valor é destinado ao profissional pela reserva da agenda.'],
       },
       {
-        question: 'Sou funcionária da Limpay?',
-        answer: [
-          'Não. Você atua como profissional autônoma e independente. Você define seus horários, aceita ou recusa os serviços que quiser, usa seus próprios métodos de trabalho e pode atuar em outras plataformas ao mesmo tempo. Não há exclusividade nem vínculo empregatício.',
-          'Como autônoma, você é responsável pelos seus próprios tributos e obrigações legais.',
-        ],
+        question: 'E se o profissional cancelar no dia do serviço?',
+        answer: ['Você recebe o reembolso integral.'],
       },
       {
-        question: 'Posso recusar um serviço?',
-        answer: [
-          'Sim, sempre — sem precisar justificar. Você também não tem meta, jornada mínima ou obrigação de estar disponível em determinado horário. Em contrapartida, a Limpay não garante um volume mínimo de serviços ou de renda.',
-        ],
+        question: 'E se o profissional não aparecer?',
+        answer: ['Você recebe o reembolso integral.'],
       },
       {
-        question: 'Posso mandar outra pessoa no meu lugar se eu não puder ir?',
-        answer: [
-          'Não. A conta é pessoal e intransferível, e o cliente contratou o perfil que passou pela nossa verificação de identidade — é uma questão de segurança de quem abre a porta de casa.',
-          'Se você não puder comparecer, cancele pelo aplicativo. O serviço volta para a plataforma e pode ser aceito por outra profissional cadastrada e verificada. Enviar terceiro não cadastrado leva à suspensão da conta e, em caso de fraude ou reincidência, ao encerramento definitivo.',
-        ],
+        question: 'Posso contestar um serviço?',
+        answer: ['Sim. A contestação deve ser registrada em até 24 horas após a notificação de conclusão e nas situações previstas pela plataforma.'],
       },
       {
-        question: 'O cliente quer me pagar por fora. Posso aceitar?',
-        answer: [
-          'Não. Todo pagamento de serviço contratado no app deve acontecer dentro da plataforma. Também é proibido cobrar valores extras por fora de um serviço já pago no aplicativo.',
-          'Além de ser motivo de banimento permanente, o pagamento por fora te deixa desprotegida: sem o registro no app, você não tem o valor retido garantindo o seu recebimento, nem suporte em caso de problema.',
-        ],
-      },
-      {
-        question: 'Preciso levar os produtos e materiais de limpeza?',
-        answer: [
-          'Isso é combinado diretamente com o cliente antes do serviço. Deixe claro no chat do app o que você leva e o que espera encontrar no local.',
-        ],
-      },
-      {
-        question: 'Preciso cancelar um serviço já aceito. O que acontece?',
-        answer: [
-          'Cancelamentos feitos no dia do serviço geram reembolso integral ao cliente e você não recebe nada por aquele agendamento. Cancelamentos frequentes podem levar à suspensão da conta, porque afetam a confiança na plataforma.',
-        ],
-      },
-      {
-        question: 'Meu acesso foi restringido ou minha conta foi encerrada. Por quê?',
-        answer: [
-          'A Limpay não aplica advertências, punições ou sanções — não somos empregadores, não avaliamos desempenho e não temos poder disciplinar sobre ninguém. O que existe é um contrato de uso da plataforma, que pode ser encerrado por qualquer uma das partes.',
-          'Os motivos mais comuns são informações falsas no cadastro, execução do serviço por pessoa não verificada, cobrança fora do aplicativo, indícios de fraude, comunicação de ocorrência grave e o não atendimento aos critérios objetivos de permanência — que valem igualmente para quem contrata e para quem presta o serviço.',
-          'O encerramento não afeta valores já devidos por serviços que você executou regularmente: eles são repassados normalmente. Você também continua livre para trabalhar por conta própria ou em outras plataformas.',
-          'Se quiser entender o motivo ou pedir reanálise, escreva para o suporte — sua manifestação será analisada e o acesso pode ser restabelecido.',
-        ],
+        question: 'A LIMPAY garante a qualidade da limpeza?',
+        answer: ['Não. A execução e a qualidade do serviço são responsabilidade do profissional.'],
       },
     ],
   },
   {
-    title: 'Segurança, dados e suporte',
+    title: 'Pagamentos',
     items: [
       {
-        question: 'Para que vocês usam meu CPF, minha selfie e meus documentos?',
-        answer: [
-          'Exclusivamente para verificar identidade, viabilizar a intermediação dos serviços, processar pagamentos, prevenir fraudes e manter a segurança da plataforma. A revisão é feita pela nossa equipe antes da ativação da conta.',
-        ],
+        question: 'Como faço o pagamento?',
+        answer: ['Todos os pagamentos devem ser realizados exclusivamente pela plataforma.'],
       },
       {
-        question: 'Meus dados são compartilhados ou vendidos?',
-        answer: [
-          'Não. A Limpay não comercializa, vende ou compartilha dados pessoais com terceiros, exceto o necessário para processar pagamentos pela instituição financeira intermediadora (Mercado Pago) ou por determinação legal. O tratamento segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).',
-        ],
+        question: 'Posso fazer PIX diretamente para o profissional?',
+        answer: ['Não. Nunca faça pagamentos fora da LIMPAY.'],
       },
       {
-        question: 'Como excluo minha conta e meus dados?',
-        answer: [
-          'É só pedir pelo aplicativo ou escrever para o suporte. Sua conta é encerrada e seu perfil deixa de aparecer na plataforma.',
-          'Alguns dados continuam guardados em base de acesso restrito mesmo depois do encerramento, como permite o artigo 16 da LGPD: os registros das transações, por obrigação fiscal e financeira; os registros de acesso ao aplicativo, pelo prazo mínimo de 6 meses previsto no Marco Civil da Internet; e as informações necessárias para responder a eventual solicitação da Justiça ou de autoridades.',
-          'Esses dados não são usados para nenhuma outra finalidade, não aparecem para outros usuários e são eliminados ou anonimizados quando os prazos legais terminam. O encerramento também não cancela obrigações financeiras pendentes.',
-        ],
+        question: 'A LIMPAY pede pagamento por WhatsApp ou e-mail?',
+        answer: ['Não. A LIMPAY nunca solicita pagamentos fora da plataforma.'],
       },
       {
-        question: 'Recebi uma mensagem pedindo Pix ou pagamento fora do app. É golpe?',
-        answer: [
-          'Sim, trate como golpe. A Limpay nunca envia mensagens, e-mails ou notificações pedindo transferências ou pagamentos por fora do aplicativo. Não responda, não pague e reporte imediatamente ao nosso suporte.',
-        ],
+        question: 'O que faço se alguém pedir um pagamento por fora?',
+        answer: ['Não faça o pagamento e comunique imediatamente o suporte da LIMPAY.'],
       },
       {
-        question: 'Como falo com o suporte?',
-        answer: [
-          'Pelo canal de atendimento dentro do aplicativo ou pelo e-mail limpayconect.suporte@gmail.com',
-        ],
+        question: 'O que é a taxa de intermediação?',
+        answer: ['É o valor cobrado pela LIMPAY pela utilização da plataforma e pela intermediação dos serviços.'],
+      },
+    ],
+  },
+  {
+    title: 'Segurança',
+    items: [
+      {
+        question: 'Como a LIMPAY verifica os profissionais?',
+        answer: ['Os profissionais enviam CPF e selfie, que são analisados pela equipe da LIMPAY antes da ativação.'],
+      },
+      {
+        question: 'Posso receber uma pessoa diferente da profissional que contratei?',
+        answer: ['Não. O serviço deve ser realizado pela pessoa cadastrada e verificada na plataforma.'],
+      },
+      {
+        question: 'O que faço se aparecer outra pessoa no lugar da profissional?',
+        answer: ['Não permita a realização do serviço e entre imediatamente em contato com o suporte.'],
+      },
+      {
+        question: 'O que faço em caso de furto, ameaça, agressão ou outro crime?',
+        answer: ['Registre imediatamente a ocorrência junto às autoridades e comunique a LIMPAY pelo canal oficial.'],
+      },
+      {
+        question: 'A LIMPAY compartilha meus dados pessoais?',
+        answer: ['Não comercializamos seus dados. Eles podem ser compartilhados quando necessário para o funcionamento da plataforma, como no processamento de pagamentos, ou quando exigido por lei.'],
+      },
+    ],
+  },
+  {
+    title: 'Avaliações',
+    items: [
+      {
+        question: 'Posso avaliar o profissional após o serviço?',
+        answer: ['Sim. A plataforma pode utilizar notas, comentários e histórico de serviços.'],
+      },
+      {
+        question: 'O que é a avaliação do profissional?',
+        answer: ['As avaliações representam as opiniões dos usuários e não constituem garantia de qualidade pela LIMPAY.'],
+      },
+    ],
+  },
+  {
+    title: 'Conta e suporte',
+    items: [
+      {
+        question: 'Posso excluir minha conta?',
+        answer: ['Sim. O encerramento pode ser solicitado pelo aplicativo ou pelo canal oficial de atendimento.'],
+      },
+      {
+        question: 'Posso ter mais de uma conta?',
+        answer: ['O mesmo CPF não pode ser utilizado para dois cadastros do mesmo tipo.'],
+      },
+      {
+        question: 'Como entro em contato com a LIMPAY?',
+        answer: ['Pelo e-mail limpayconect@gmail.com ou pelo suporte limpayconect.suporte@gmail.com.'],
       },
     ],
   },
