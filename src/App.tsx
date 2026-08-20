@@ -226,7 +226,7 @@ const faqSections: FaqSection[] = [
       },
       {
         question: 'Como entro em contato com a LIMPAY?',
-        answer: ['Pelo e-mail limpayconect@gmail.com ou pelo suporte limpayconect.suporte@gmail.com.'],
+        answer: ['Pelo e-mail contato@limpayconect.com.'],
       },
     ],
   },
@@ -489,7 +489,7 @@ function App() {
           <a href="#">Contato</a>
           
         </nav>
-        <span>SUPORTE: limpayconect.suporte@gmail.com</span>
+        <span>SUPORTE: contato@limpayconect.com</span>
         <p className="footer-copy">Todos os direitos reservados.</p>
       </footer>
     </main>
