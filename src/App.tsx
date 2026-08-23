@@ -233,6 +233,24 @@ const faqSections: FaqSection[] = [
 ]
 
 function App() {
+  const handleContactSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const motivo = String(formData.get('motivo') ?? '');
+    const nome = String(formData.get('nome') ?? '');
+    const email = String(formData.get('email') ?? '');
+
+    const subject = encodeURIComponent(`Contato Limpay - ${motivo}`);
+    const body = encodeURIComponent(
+      `Motivo: ${motivo}\n\nNome: ${nome}\nE-mail: ${email}`,
+    );
+
+    window.location.href = `mailto:contato@limpayconect.com?subject=${subject}&body=${body}`;
+    form.reset();
+  };
+
   return (
     <main className="page-shell">
       <header className="top-header" aria-label="Instagram da Limpay">
@@ -476,6 +494,42 @@ function App() {
         <p className="quote-strip__reference">Gênesis 12:7–8</p>
       </section>
 
+      <section className="contact-section" id="contato">
+        <div className="contact-section__header">
+          <p className="eyebrow">Contato</p>
+          <h2>Fale com a Limpay</h2>
+        </div>
+
+        <form className="contact-form" onSubmit={handleContactSubmit}>
+          <div className="field-group">
+            <label htmlFor="motivo">Motivo</label>
+            <select id="motivo" name="motivo" defaultValue="" required>
+              <option value="" disabled>
+                Selecione o motivo
+              </option>
+              <option className='colordropdown' value="cancelamento da conta">Cancelamento da conta</option>
+              <option className='colordropdown' value="elogio">Elogio</option>
+              <option className='colordropdown' value="suporte">Suporte</option>
+              <option className='colordropdown' value="denuncia">Denúncia</option>
+            </select>
+          </div>
+
+          <div className="field-group">
+            <label htmlFor="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+          </div>
+
+          <div className="field-group">
+            <label htmlFor="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+          </div>
+
+          <button type="submit" className="primary-action primary-action--dark contact-form__submit">
+            Enviar
+          </button>
+        </form>
+      </section>
+
       <footer className="site-footer">
         <div>
           <p className="footer-brand">Limpay</p>
@@ -486,7 +540,7 @@ function App() {
           <a href="/politicadeprivacidade.html">Política de Privacidade</a>
           <a href="/termos.html">Termos de Uso</a>
           <a href="#">Redes sociais</a>
-          <a href="#">Contato</a>
+          <a href="#contato">Contato</a>
           
         </nav>
         <span>SUPORTE: contato@limpayconect.com</span>
