@@ -413,10 +413,10 @@ cursor: pointer;
   position: relative;
   width: min(100%, 42rem);
   margin-inline: auto;
-  min-height: 42rem;
+  min-height: auto;
   display: grid;
   
-  align-content: center;
+  align-content: start;
   gap: 1.125rem;
   isolation: isolate;
 }
