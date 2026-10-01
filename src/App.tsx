@@ -5,21 +5,6 @@ import appleStoreLogo from './assets/logos/App_Store_(iOS)-Logo.wine.svg'
 import googlePlayLogo from './assets/logos/google-play-badge-logo-svgrepo-com.svg'
 import './App.css'
 
-const highlights = [
-  {
-    title: 'Rápido',
-    description: 'Encontre ajuda perto de você com poucos toques.',
-  },
-  {
-    title: 'Prático',
-    description: 'Agende, acompanhe e resolva tudo em um fluxo simples.',
-  },
-  {
-    title: 'Seguro',
-    description: 'Profissionais avaliados para trazer mais confiança ao atendimento.',
-  },
-]
-
 const steps = [
   'Escolha o serviço que você precisa',
   'Veja profissionais disponíveis na sua região',
