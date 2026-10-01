@@ -1,6 +1,8 @@
 import bannerImage from './assets/aqui.png'
 import storeQrCode from './assets/qrCode/store.png'
 import appQrCode2 from './assets/qrCode/apple.png'
+import appleStoreLogo from './assets/logos/App_Store_(iOS)-Logo.wine.svg'
+import googlePlayLogo from './assets/logos/google-play-badge-logo-svgrepo-com.svg'
 import './App.css'
 
 const highlights = [
@@ -290,7 +292,7 @@ function App() {
         <div className="hero-copy">
           <div className="hero-actions">
             <a className="primary-action" href="#como-funciona">
-              Quero encontrar ajuda
+            <p>Quero encontrar ajuda</p> 
             </a>
             <a className="secondary-action" href="#beneficios">
               Ver benefícios
@@ -304,40 +306,55 @@ function App() {
 
         <div className="hero-visual">
           
-          <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
-            <div className="qr-placeholder__frame">
+          <div className="qr-codes-row">
+            <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
+              <div className="qr-placeholder__frame">
+                <img
+                  src={storeQrCode}
+                  alt="QR code para baixar o aplicativo Limpay pela Play Store"
+                />
+              </div>
+              <div className="qr-placeholder__copy">
+                <p className="qr-placeholder__eyebrow">Baixe o app pela Play Store</p>
+               
+              </div>
               <img
-                src={storeQrCode}
-                alt="QR code para baixar o aplicativo Limpay"
+                className="qr-placeholder__store-logo"
+                src={googlePlayLogo}
+                alt="Google Play"
               />
             </div>
-            <div className="qr-placeholder__copy">
-              <p className="qr-placeholder__eyebrow">Baixe o app pela Play Store</p>
-              <strong>Aponte a câmera para o QR code</strong>
-              <span>Encontre profissionais próximos de você.</span>
+
+            <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
+              <div className="qr-placeholder__frame">
+                <img
+                  src={appQrCode2}
+                  alt="QR code para baixar o aplicativo Limpay pela Apple Store"
+                />
+              </div>
+              <div className="qr-placeholder__copy">
+                <p className="qr-placeholder__eyebrow">Baixe o app pela Apple Store</p>
+              
+              </div>
+              <img
+                className="qr-placeholder__store-logo"
+                src={appleStoreLogo}
+                alt="App Store"
+              />
             </div>
           </div>
          
-          <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
-            <div className="qr-placeholder__frame">
-              <img
-                src={appQrCode2}
-                alt="QR code para baixar o aplicativo Limpay"
-              />
-            </div>
-            <div className="qr-placeholder__copy">
-              <p className="qr-placeholder__eyebrow">Baixe o app pela Apple Store</p>
-              <strong>Aponte a câmera para o QR code</strong>
-              <span>Encontre profissionais próximos de você.</span>
-            </div>
-          </div>
-         
-          <div className="floating-card floating-card--bottom">
-            <span>Atendimento prático</span>
-            <strong>Em poucos cliques</strong>
-          </div>
         </div>
+
+        <section className="quote-strip" aria-label="Mensagem bíblica">
+          <p className="quote-strip__text">
+            “Por onde passava, Abraão erguia sua tenda na terra, mas levantava altares ao Senhor — declarando que sua vida não pertencia ao mundo, e sim a Deus.”
+          </p>
+          <p className="quote-strip__reference">Gênesis 12:7–8</p>
+        </section>
       </section>
+ 
+
 
       <section className="info-strip" id="beneficios">
         <article>
@@ -476,12 +493,7 @@ function App() {
         </div>
       </section>
 
-      <section className="quote-strip" aria-label="Mensagem bíblica">
-        <p className="quote-strip__text">
-          “Por onde passava, Abraão erguia sua tenda na terra, mas levantava altares ao Senhor — declarando que sua vida não pertencia ao mundo, e sim a Deus.”
-        </p>
-        <p className="quote-strip__reference">Gênesis 12:7–8</p>
-      </section>
+    
 
       <section className="contact-section" id="contato">
         <div className="contact-section__header">
