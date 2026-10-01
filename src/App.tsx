@@ -1,4 +1,6 @@
 import bannerImage from './assets/aqui.png'
+import storeQrCode from './assets/qrCode/store.png'
+import appQrCode2 from './assets/qrCode/apple.png'
 import './App.css'
 
 const highlights = [
@@ -275,24 +277,17 @@ function App() {
       </header>
 
       <section className="hero-section">
+
+        <div className="hero-extra">
+          <img
+            className="banner-image"
+            src={bannerImage}
+            alt="Banner principal da landpage Limpay Conect mostrando uma profissional e o aplicativo em destaque"
+          />
+         
+        </div>
+
         <div className="hero-copy">
-          <div className="brand-row">
-            <div className="brand-mark" aria-hidden="true">
-              <span className="brand-mark__roof" />
-              <span className="brand-mark__spark brand-mark__spark--one" />
-              <span className="brand-mark__spark brand-mark__spark--two" />
-            </div>
-            <div>
-              <p className="eyebrow">Limpay Conect</p>
-              <h1>Encontre em minutos.</h1>
-            </div>
-          </div>
-
-          <p className="hero-text">
-            Profissionais avaliados perto de você, prontos para ajudar quando a
-            necessidade aparece.
-          </p>
-
           <div className="hero-actions">
             <a className="primary-action" href="#como-funciona">
               Quero encontrar ajuda
@@ -302,47 +297,41 @@ function App() {
             </a>
           </div>
 
-          <div className="feature-grid">
-            {highlights.map((item) => (
-              <article className="feature-card" key={item.title}>
-                <span className="feature-card__icon" aria-hidden="true">
-                  ✓
-                </span>
-                <div>
-                  <h2>{item.title}</h2>
-                  <p>{item.description}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+         
         </div>
 
+        
+
         <div className="hero-visual">
-          <div className="visual-glow visual-glow--left" />
-          <div className="visual-glow visual-glow--right" />
+          
           <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
-            <div className="qr-placeholder__frame" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span className="qr-placeholder__center" />
+            <div className="qr-placeholder__frame">
+              <img
+                src={storeQrCode}
+                alt="QR code para baixar o aplicativo Limpay"
+              />
             </div>
             <div className="qr-placeholder__copy">
-              <p className="qr-placeholder__eyebrow">QR code do app</p>
-              <strong>Espaço reservado</strong>
-              <span>O QR code será inserido aqui quando estiver pronto.</span>
+              <p className="qr-placeholder__eyebrow">Baixe o app pela Play Store</p>
+              <strong>Aponte a câmera para o QR code</strong>
+              <span>Encontre profissionais próximos de você.</span>
             </div>
           </div>
-          <img
-            className="banner-image"
-            src={bannerImage}
-            alt="Banner principal da landpage Limpay Conect mostrando uma profissional e o aplicativo em destaque"
-          />
-          <div className="floating-card floating-card--top">
-            <span>Resposta rápida</span>
-            <strong>Profissionais próximos</strong>
+         
+          <div className="qr-placeholder" aria-label="Espaço reservado para o QR code do aplicativo">
+            <div className="qr-placeholder__frame">
+              <img
+                src={appQrCode2}
+                alt="QR code para baixar o aplicativo Limpay"
+              />
+            </div>
+            <div className="qr-placeholder__copy">
+              <p className="qr-placeholder__eyebrow">Baixe o app pela Apple Store</p>
+              <strong>Aponte a câmera para o QR code</strong>
+              <span>Encontre profissionais próximos de você.</span>
+            </div>
           </div>
+         
           <div className="floating-card floating-card--bottom">
             <span>Atendimento prático</span>
             <strong>Em poucos cliques</strong>
